@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WarNightOG | Minecraft Mods</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">   
+    <link rel="stylesheet" href="mods.css">
+</head>
+<body>
+    <div class="cyber-grid"></div>
+    <div class="scanlines"></div>
+
+    <nav class="cyber-nav">
+        <div class="nav-logo">
+            <span class="logo-bracket">[</span>
+            <span class="logo-text">MODS.exe</span>
+            <span class="logo-bracket">]</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link" data-text="[HOME]">[HOME]</a></li>
+            <li><a href="inventions.html" class="nav-link" data-text="[INVENTIONS]">[INVENTIONS]</a></li>
+            <li><a href="plugins.html" class="nav-link" data-text="[PLUGINS]">[PLUGINS]</a></li>
+            <li><a href="mods.html" class="nav-link active" data-text="[MODS]">[MODS]</a></li>
+            <li><a href="about.html" class="nav-link" data-text="[ABOUT]">[ABOUT]</a></li>
+            <li><a href="contact.html" class="nav-link" data-text="[CONTACT]">[CONTACT]</a></li>
+        </ul>
+        <div class="nav-terminal">
+            <span class="terminal-prompt">root@mods:~$</span>
+            <span class="terminal-text" id="terminal-text"></span>
+            <span class="terminal-cursor">_</span>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section id="mods" class="section active">
+            <div class="cyber-header minecraft-theme">
+                <h2 class="section-title">
+                    <span class="title-number">></span>
+                    <span class="title-text">MINECRAFT_MODS</span>
+                    <span class="title-line"></span>
+                </h2>
+                <p class="section-subtitle">> Transform your Minecraft experience with custom mods</p>
+                <div class="minecraft-header">
+                    <div class="block netherite"></div>
+                    <div class="block emerald"></div>
+                    <div class="block lapis"></div>
+                    <div class="block crafting"></div>
+                </div>
+            </div>
+
+            <div class="mods-grid">
+                <div class="mod-card">
+                    <div class="mod-image">
+                        <img src="images/minecraft/mod1.jpg" alt="Elemental Realms Mod">
+                        <div class="mod-overlay">
+                            <h3>Elemental Realms</h3>
+                            <p>Adds 4 new dimensions based on Ninjago elements with unique biomes, mobs, and progression.</p>
+                            <div class="mod-tags">
+                                <span>DIMENSIONS</span>
+                                <span>ELEMENTS</span>
+                                <span>PROGRESSION</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mod-footer">
+                        <a href="#" class="cyber-button small">
+                            <span>> DETAILS</span>
+                            <i class="fas fa-info-circle"></i>
+                        </a>
+                        <a href="#" class="cyber-button small secondary">
+                            <span>> DOWNLOAD</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-image">
+                        <img src="images/minecraft/mod2.jpg" alt="True Spinjitzu Mod">
+                        <div class="mod-overlay">
+                            <h3>True Spinjitzu</h3>
+                            <p>Complete Spinjitzu combat system with animations, combos, and elemental mastery.</p>
+                            <div class="mod-tags">
+                                <span>COMBAT</span>
+                                <span>ANIMATIONS</span>
+                                <span>SKILLS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mod-footer">
+                        <a href="#" class="cyber-button small">
+                            <span>> DETAILS</span>
+                            <i class="fas fa-info-circle"></i>
+                        </a>
+                        <a href="#" class="cyber-button small secondary">
+                            <span>> DOWNLOAD</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-image">
+                        <img src="images/minecraft/mod3.jpg" alt="Cyber Forge Mod">
+                        <div class="mod-overlay">
+                            <h3>Cyber Forge</h3>
+                            <p>Futuristic tech mod with energy weapons, cybernetic enhancements, and hi-tech blocks.</p>
+                            <div class="mod-tags">
+                                <span>TECH</span>
+                                <span>ENERGY</span>
+                                <span>FUTURE</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mod-footer">
+                        <a href="#" class="cyber-button small">
+                            <span>> DETAILS</span>
+                            <i class="fas fa-info-circle"></i>
+                        </a>
+                        <a href="#" class="cyber-button small secondary">
+                            <span>> DOWNLOAD</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="cyber-footer minecraft-footer">
+        <div class="code-display">
+            <div class="code-line"></div>
+            <div class="code-output" id="code-output"></div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">WN_MODS</span>
+                    <span class="logo-bracket">]</span>
+                </div>
+                <p class="footer-text">> SYSTEM_STATUS: OPERATIONAL</p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-links">
+                    <a href="index.html">[HOME]</a>
+                    <a href="inventions.html">[INVENTIONS]</a>
+                    <a href="plugins.html">[PLUGINS]</a>
+                    <a href="mods.html">[MODS]</a>
+                    <a href="about.html">[ABOUT]</a>
+                    <a href="contact.html">[CONTACT]</a>
+                </div>
+                <div class="footer-copyright">
+                    > COPYRIGHT 2023 WAR_NIGHT_OG SYSTEMS | ALL_RIGHTS_RESERVED
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

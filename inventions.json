@@ -1,0 +1,42 @@
+{
+    "inventions": [
+        
+        {
+            "id": "UNIQUE_ID_NUMBER",
+            "title": "PRODUCT_NAME_IN_UPPERCASE",
+            "description": "Brief description of the product (1-2 sentences)",
+            "category": "web/game/design/app/minecraft",
+            "price": 35,
+            "oldPrice": 50, 
+            "image": "images/inventions/FILENAME.jpg",
+            "downloads": 1000,
+            "rating": 4.5,
+            "date": "YYYY-MM-DD",
+            "purchaseLink": "https://buymeacoffee.com/warnightog",
+            "badge": {           
+                "class": "new/bestseller/sale/popular",
+                "text": "BADGE_TEXT"
+            },
+            "tech": ["TECH1", "TECH2", "TECH3"]  
+        },
+       
+        {
+            "id": 1,
+            "title": "CYBER_DASHBOARD",
+            "description": "Interactive admin dashboard with real-time analytics and cyberpunk UI",
+            "category": "web",
+            "price": 49.99,
+            "oldPrice": 59.99,
+            "image": "images/inventions/webapp1.jpg",
+            "downloads": 2450,
+            "rating": 4.5,
+            "date": "2023-03-15",
+            "purchaseLink": "https://buymeacoffee.com/warnightog",
+            "badge": {
+                "class": "new",
+                "text": "NEW"
+            },
+            "tech": ["HTML5", "CSS3", "JS", "GSAP"]
+        }
+    ]
+}

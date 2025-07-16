@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WarNightOG | Cyber Systems</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cyber-grid"></div>
+    <div class="scanlines"></div>
+    <div class="loading-screen">
+        <div class="loader">
+            <div class="binary-loader"></div>
+            <span>INITIALIZING CYBER SYSTEMS</span>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="cyber-nav">
+        <div class="nav-logo">
+            <span class="logo-bracket">[</span>
+            <span class="logo-text">WAR_NIGHT_OG.exe</span>
+            <span class="logo-bracket">]</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active" data-text="[HOME]">[HOME]</a></li>
+            <li><a href="#inventions" class="nav-link" data-text="[INVENTIONS]">[INVENTIONS]</a></li>
+            <li><a href="#plugins" class="nav-link" data-text="[PLUGINS]">[PLUGINS]</a></li>
+            <li><a href="#mods" class="nav-link" data-text="[MODS]">[MODS]</a></li>
+            <li><a href="#about" class="nav-link" data-text="[ABOUT]">[ABOUT]</a></li>
+            <li><a href="#contact" class="nav-link" data-text="[CONTACT]">[CONTACT]</a></li>
+        </ul>
+        <div class="nav-terminal">
+            <span class="terminal-prompt">root@warnightog:~$</span>
+            <span class="terminal-text" id="terminal-text"></span>
+            <span class="terminal-cursor">_</span>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="cyber-container">
+                <div class="cyber-left">
+                    <div class="cyber-tagline">
+                        <span class="tagline-line">> SYSTEM BOOT</span>
+                        <span class="tagline-line">> INIT CYBER_CORE</span>
+                        <span class="tagline-line">> LAUNCH INTERFACE</span>
+                    </div>
+                    <h1 class="cyber-title">
+                        <span class="title-line"></span>
+                    </h1>
+                    <div class="cyber-description">
+                        <p>> Pushing digital boundaries through experimental development</p>
+                        <p>> Creating immersive technical experiences</p>
+                        <p>> Engineering next-gen interfaces</p>
+                    </div>
+                    <div class="cyber-buttons">
+                        <a href="#inventions" class="cyber-button">
+                            <span>> EXPLORE_SYSTEMS</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                        <a href="#contact" class="cyber-button secondary">
+                            <span>> CONNECT_TERMINAL</span>
+                            <i class="fas fa-terminal"></i>
+                        </a>
+                    </div>
+                    <div class="cyber-roles">
+                        <div class="roles-terminal">
+                            <span class="terminal-prompt">></span>
+                            <span class="roles-text" id="roles-text"></span>
+                            <span class="terminal-cursor">█</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cyber-right">
+                    <div class="cyber-avatar">
+                        <div class="avatar-container">
+                            <img src="images/avatar.jpg" alt="WarNightOG" class="avatar-image">
+                            <div class="avatar-hud">
+                                <div class="hud-line"></div>
+                                <div class="hud-line"></div>
+                                <div class="hud-line"></div>
+                                <div class="hud-line"></div>
+                            </div>
+                            <div class="avatar-particles"></div>
+                        </div>
+                    </div>
+                    <div class="cyber-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="15">0</div>
+                            <div class="stat-label">> ACTIVE_PROJECTS</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="5">0</div>
+                            <div class="stat-label">> INVENTIONS</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="10000">0</div>
+                            <div class="stat-label">> LINES_OF_CODE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cyber-scroll">
+                <span>> SCROLL_DOWN</span>
+                <div class="scroll-arrow">
+                    <div class="arrow-line"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other sections would go here with similar cyber styling -->
+        <!-- Inventions, Plugins, Mods, About, Contact -->
+        
+    </main>
+
+    <footer class="cyber-footer">
+        <div class="code-display">
+            <div class="code-line"></div>
+            <div class="code-output" id="code-output"></div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">WN_TERMINAL</span>
+                    <span class="logo-bracket">]</span>
+                </div>
+                <p class="footer-text">> SYSTEM_STATUS: OPERATIONAL</p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-links">
+                    <a href="index.html">[HOME]</a>
+                    <a href="inventions.html">[INVENTIONS]</a>
+                    <a href="plugins.html">[PLUGINS]</a>
+                    <a href="mods.html">[MODS]</a>
+                    <a href="about.html">[ABOUT]</a>
+                    <a href="contact.html">[CONTACT]</a>
+                </div>
+                <div class="footer-copyright">
+                    > COPYRIGHT 2023 WAR_NIGHT_OG SYSTEMS | ALL_RIGHTS_RESERVED
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+{
+    "plugins": [
+        {
+            "id": 1,
+            "title": "ELEMENTAL_POWERS",
+            "description": "Complete Ninjago-inspired elemental system with 16 powers, progression, and True Potential transformations",
+            "category": "RPG",
+            "price": 14.99,
+            "image": "images/avatar.jpg",
+            "downloads": 2450,
+            "rating": 4.5,
+            "date": "2023-01-15",
+            "purchaseLink": "https://buymeacoffee.com/warnightog",
+            "version": "3.2.1",
+            "compatibility": "Spigot 1.8-1.19",
+            "badge": {
+                "class": "bestseller",
+                "text": "BESTSELLER"
+            },
+            "tags": ["ELEMENTS", "RPG", "COMBAT"]
+        },
+        {
+            "id": 2,
+            "title": "DRAGON_SYSTEM",
+            "description": "Advanced dragon taming and combat with 8 dragon types, breeding mechanics, and custom abilities",
+            "category": "RPG",
+            "price": 12.99,
+            "image": "images/avatar.jpg",
+            "downloads": 1890,
+            "rating": 5.0,
+            "date": "2023-03-22",
+            "purchaseLink": "https://buymeacoffee.com/warnightog",
+            "version": "2.7.3",
+            "compatibility": "Spigot 1.16+",
+            "badge": {
+                "class": "new",
+                "text": "NEW"
+            },
+            "tags": ["DRAGONS", "TAMING", "RPG"]
+        },
+        {
+            "id": 3,
+            "title": "CASTLE_SIEGE",
+            "description": "Massive team-based siege warfare with destructible castles, siege weapons, and class systems",
+            "category": "MINIGAME",
+            "price": 17.99,
+            "image": "images/avatar.jpg",
+            "downloads": 3120,
+            "rating": 4.0,
+            "date": "2022-11-05",
+            "purchaseLink": "https://buymeacoffee.com/warnightog",
+            "version": "1.9.0",
+            "compatibility": "Spigot 1.12+",
+            "tags": ["SIEGE", "TEAM", "MINIGAME"]
+        }
+    ]
+}

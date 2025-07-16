@@ -1,0 +1,355 @@
+/* inventions.css - Enhanced styling for inventions page */
+
+.inventory-dashboard {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(10, 10, 10, 0.7);
+    border: 1px solid var(--primary);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+}
+
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.stat-card {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: var(--transition);
+}
+
+.stat-card:hover {
+    border-color: var(--primary);
+    box-shadow: var(--shadow);
+    transform: translateY(-3px);
+}
+
+.stat-icon {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.stat-content {
+    flex: 1;
+}
+
+.stat-value {
+    font-size: 2rem;
+    color: var(--primary);
+    font-weight: bold;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.inventory-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.search-bar {
+    position: relative;
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+}
+
+.search-bar i {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary);
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    color: var(--light);
+    font-family: var(--font-main);
+    transition: var(--transition);
+}
+
+.search-bar input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: var(--shadow);
+}
+
+.filter-tabs {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.filter-tab {
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    color: var(--light);
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 0.9rem;
+}
+
+.filter-tab:hover {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+.filter-tab.active {
+    background-color: var(--primary);
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.inventory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.invention-card {
+    background: rgba(10, 10, 10, 0.8);
+    border: 1px solid rgba(0, 255, 0, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.invention-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.card-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0.25rem 0.75rem;
+    background-color: var(--primary);
+    color: var(--dark);
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.card-badge.popular {
+    background-color: #ff00ff;
+}
+
+.card-badge.new {
+    background-color: #00ffff;
+}
+
+.card-badge.sale {
+    background-color: #ff6600;
+}
+
+.invention-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.invention-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.invention-card:hover .invention-image img {
+    transform: scale(1.05);
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.invention-card:hover .image-overlay {
+    opacity: 1;
+}
+
+.quick-view {
+    padding: 0.5rem 1rem;
+    background: rgba(0, 255, 0, 0.2);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    cursor: pointer;
+    transition: var(--transition);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.quick-view:hover {
+    background: rgba(0, 255, 0, 0.4);
+}
+
+.invention-details {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.invention-details h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.invention-details p {
+    color: var(--light);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tech-tags span {
+    padding: 0.25rem 0.5rem;
+    background: rgba(0, 255, 0, 0.1);
+    color: var(--primary);
+    font-size: 0.7rem;
+    border: 1px solid rgba(0, 255, 0, 0.3);
+}
+
+.invention-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem 1.5rem;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.price.old {
+    text-decoration: line-through;
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+}
+
+.price.new {
+    color: #ff3333;
+}
+
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 255, 0, 0.1);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 0.8rem;
+}
+
+.add-to-cart:hover {
+    background: rgba(0, 255, 0, 0.3);
+}
+
+.inventory-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.page-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    color: var(--light);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.page-btn:hover {
+    background: rgba(0, 255, 0, 0.1);
+}
+
+.page-btn.active {
+    background: var(--primary);
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.page-btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .inventory-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .dashboard-stats {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .inventory-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .inventory-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .search-bar {
+        max-width: 100%;
+    }
+}

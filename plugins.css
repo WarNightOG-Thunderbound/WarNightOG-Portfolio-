@@ -1,0 +1,266 @@
+/* plugins.css - Enhanced Minecraft plugins styling */
+.plugins-marketplace {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.marketplace-filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.filter-category h3,
+.filter-sort h3 {
+    color: #55FF55;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.category-list {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    padding: 0.5rem 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(85, 255, 85, 0.3);
+    color: #CCCCCC;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.category-item:hover {
+    background: rgba(85, 255, 85, 0.1);
+}
+
+.category-item.active {
+    background: #55FF55;
+    color: #000000;
+    font-weight: bold;
+}
+
+.sort-select {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(85, 255, 85, 0.3);
+    color: #FFFFFF;
+    padding: 0.5rem;
+    font-family: var(--font-main);
+    min-width: 200px;
+}
+
+.plugins-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.plugin-card {
+    background: rgba(10, 10, 10, 0.8);
+    border: 1px solid rgba(85, 255, 85, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.plugin-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(85, 255, 85, 0.3);
+    border-color: #55FF55;
+}
+
+.plugin-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0.25rem 0.75rem;
+    background: #55FF55;
+    color: #000000;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.plugin-badge.bestseller {
+    background: #FFD700;
+}
+
+.plugin-badge.new {
+    background: #FF5555;
+}
+
+.plugin-image {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.plugin-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.plugin-card:hover .plugin-image img {
+    transform: scale(1.05);
+}
+
+.plugin-version {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #55FF55;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.7rem;
+}
+
+.plugin-content {
+    padding: 1.5rem;
+}
+
+.plugin-content h3 {
+    color: #55FF55;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.plugin-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-bottom: 0.5rem;
+    color: #FFD700;
+}
+
+.plugin-rating span {
+    color: #CCCCCC;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+}
+
+.plugin-description {
+    color: #CCCCCC;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    height: 60px;
+    overflow: hidden;
+}
+
+.plugin-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    color: #999999;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.plugin-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem 1.5rem;
+}
+
+.plugin-price {
+    font-size: 1.3rem;
+    color: #55FF55;
+    font-weight: bold;
+}
+
+.plugin-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-family: var(--font-main);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.plugin-button.buy {
+    background: rgba(85, 255, 85, 0.2);
+    color: #55FF55;
+    border: 1px solid #55FF55;
+}
+
+.plugin-button.buy:hover {
+    background: rgba(85, 255, 85, 0.4);
+}
+
+.plugin-button.details {
+    background: rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+
+.plugin-button.details:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.marketplace-footer {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(85, 255, 85, 0.3);
+}
+
+.download-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.stats-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.stats-item i {
+    font-size: 1.5rem;
+    color: #55FF55;
+}
+
+.stats-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats-value {
+    font-size: 1.5rem;
+    color: #55FF55;
+    font-weight: bold;
+}
+
+.stats-label {
+    font-size: 0.8rem;
+    color: #CCCCCC;
+}
+
+@media (max-width: 768px) {
+    .plugins-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+    
+    .marketplace-filters {
+        flex-direction: column;
+    }
+}
